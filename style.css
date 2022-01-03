@@ -1,0 +1,322 @@
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.FirstView {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./me.JPG");
+  background-size: cover;
+  background-position-y: center;
+}
+
+/*Estilo del navbar*/
+
+.NavContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+}
+
+.Logo {
+  color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.logo:hover + .hide {
+  position: absolute;
+  display: block;
+  color: #e5e5e5;
+  cursor: pointer;
+}
+
+.navbtn {
+  display: inline-block;
+  margin-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn1 {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+.btn1:hover {
+  text-decoration: underline;
+}
+
+.NavMenu {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+/*Estilo del navbar*/
+
+/*Estilo de la primera parte de la pagina*/
+
+.firstPart-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+  height: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 30px;
+  font-size: 100px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.description {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  font-size: 80px;
+  text-align: center;
+}
+
+/* .icon {
+  font-size: 40px;
+  margin-left: 20px;
+  justify-content: center;
+} */
+
+/*Estilo de la primera parte de la pagina*/
+
+/*Segunda parte de la pagina. Donde va el about me*/
+
+.SecondView {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181818;
+}
+
+.information {
+  width: 750px;
+  height: 230px;
+  text-align: center;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-functio: ease-in-out;
+  animation-timing-function: ease-in-out;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 1), 0 15px 12px rgba(0, 0, 0, 1);
+}
+.information:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+
+.picture {
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.9), 0 15px 12px rgba(0, 0, 0, 0.92);
+}
+
+.About {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+/*Segunda parte de la pagina. Donde va el about me*/
+
+/*Tercera parte donde van los servicios*/
+.ThirdView {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #505050;
+}
+
+.ThirdView-container {
+  height: 500px;
+  width: 1100px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42);
+}
+
+.servicios {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.fotografo {
+  border-radius: 20px;
+  background-color: white;
+  width: 280px;
+  height: 200px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42);
+  margin-top: 30px;
+}
+
+.programador {
+  border-radius: 20px;
+  background-color: white;
+  width: 280px;
+  height: 200px;
+  margin-left: 200px;
+  margin-top: 30px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5), 0 15px 12px rgba(0, 0, 0, 0.42);
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.srvcT {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+}
+.srvc {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+/*Tercera parte donde van los servicios*/
+
+.ForthView {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #dcdcdc;
+}
+
+.forthTitle {
+  font-family: "Poppins", sans-serif;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  top: -200px;
+  font-size: 60px;
+}
+
+.forthTitle2 {
+  color: #a9a9a9;
+  position: relative;
+  top: -190px;
+  font-size: 35px;
+}
+.icon {
+  width: 64px;
+  justify-content: center;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  position: relative;
+}
+
+.instagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactText {
+  position: relative;
+  top: 25px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #707070;
+  font-size: 20px;
+  font-weight: normal;
+}
